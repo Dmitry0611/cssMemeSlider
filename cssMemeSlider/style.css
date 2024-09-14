@@ -1,0 +1,54 @@
+.slider {
+    width: 800px;
+    height: 740px;
+    overflow: hidden;
+    border: 10px solid #000;
+    margin: 0 auto;
+    background-color: black;
+}
+.container {
+
+}
+.slides {
+    display: flex;
+}
+.slide1{
+    animation-name: animation-slide;
+    animation-duration: 5s;
+}
+@keyframes animation-slide {
+    0% {
+        margin-left: 0px;
+    }
+    25% {
+        margin-left: -900px;
+    }
+    50% {
+        margin-left: -1800px;
+    }
+    75% {
+        margin-left: -2700px;
+    }
+}
+
+.text {
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+.controls {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    padding-right: 20px;
+}
+input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.input:last-child {
+    margin-right: 0px;
+}
